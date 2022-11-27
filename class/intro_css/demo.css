@@ -1,0 +1,57 @@
+h1{
+    color: red;
+}
+
+
+span, em{
+    color: green;
+}
+
+
+.special{
+    list-style-type: none;
+    color: orange;
+    font-weight: bold;
+}
+
+/* style an li element that has the class
+of special-too */
+li.special-too, em.special-too{
+    color: brown;
+    font-weight: bold;
+}
+
+
+/* Styling based on location */
+
+/* style the anchor tag inside of a p tag */
+p a{
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+
+div + ul{
+    background-color: hotpink;
+}
+
+h1.special-too + p{
+    color: blue;
+    font-size: 3rem;
+}
+
+
+a:visited{
+
+    color: red;
+}
+
+a:active{
+    color: beige;
+
+}
+
+a:hover{
+
+    color:yellowgreen
+}

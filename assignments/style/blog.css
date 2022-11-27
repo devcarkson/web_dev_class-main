@@ -1,0 +1,327 @@
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+img {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #3f4954;
+}
+
+.nav-bar,
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text-gray {
+    color: #3f4954;
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+
+/* navbar */
+
+.nav-bar-container {
+    background-color: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav-bar {
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav-link {
+    padding: 1.6rem;
+    font-family: 'Segoe UI';
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.nav-link:hover {
+    background-color: aquamarine;
+}
+
+.nav-link:hover a {
+    color: white;
+}
+
+.nav-blog a {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: Impact;
+    font-size: 1.6rem;
+}
+
+
+/* navabr ends */
+
+.site-title {
+    background: url("/images/pexels-marina-leonova-9465701.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+.site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+}
+
+.site-title h1,
+h3 {
+    margin: .3rem;
+}
+
+.site-title .btn {
+    margin: 2rem;
+    background: darkseagreen;
+}
+
+.site-title .btn:hover {
+    border-style: groove;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+/* End Site Title */
+
+.blog {
+    background: url("../assets/Abract01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+.blog .blog-post {
+    padding-top: 6rem;
+}
+
+.blog-post .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(15, 59, 54, 0.452);
+}
+
+.blog .blog-post .blog-title {
+    padding: 2rem 0;
+}
+
+.blog-content .btn-blog {
+    padding: .7rem 2rem;
+    margin: .5rem;
+}
+
+.blog-post span {
+    display: block;
+}
+
+section .container {
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* ========================Site Content=================== */
+
+section .site-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.post-content {
+    width: 100%;
+}
+
+.post-image,
+.post-title {
+    padding: 2em;
+    position: relative;
+}
+
+.post-info {
+    background: darkseagreen;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 4rem;
+}
+
+.post-image>div {
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    transition: 1s ease;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+.post-image .post-info span {
+    margin: 0.5rem;
+}
+
+.site-content .post-content .post-title a {
+    font-family: var(--Roboto);
+    font-size: 1.5rem;
+}
+
+.site-content .post-content .post-title .post-btn {
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: darkseagreen;
+}
+
+.pagination {
+    justify-content: center;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.pagination a {
+    padding: 20px;
+    border-radius: 50%;
+    font-family: sans-serif;
+}
+
+.pages {
+    color: white;
+    background: gray;
+}
+
+.pages:hover {
+    color: green;
+    background: #d2e5ee;
+}
+
+
+/* ============================SIDE BAR======================== */
+
+.list-items {
+    background: darkseagreen;
+    border-radius: 3rem;
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-items a {
+    color: black;
+}
+
+.post-content {
+    padding: 1em;
+}
+
+.post-title a {
+    color: black;
+    font-size: 5px;
+}
+
+.popular-posts .post-content .post-info {
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+
+.post-title {
+    padding: 5px;
+}
+
+.newsletter {
+    padding-top: 3rem;
+}
+
+.newsletter-items {
+    padding: 2em;
+}
+
+.mail {
+    width: 80%;
+    height: 1.9rem;
+    font-size: 1rem;
+    padding: .3rem .5rem;
+}
+
+.newsletter .newsletter-btn {
+    background: darkseagreen;
+    padding: .8rem 30%;
+    margin: 1rem 0rem;
+    border-radius: 0rem;
+    font-size: 1.2rem;
+}
+
+.tag {
+    background: #d2e5ee;
+    margin: 12px;
+    padding: 13px;
+    border-radius: 2em;
+}
